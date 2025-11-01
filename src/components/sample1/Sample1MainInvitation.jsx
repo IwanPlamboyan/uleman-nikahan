@@ -17,6 +17,8 @@ import Sample1HeroSection from "./Sample1HeroSection";
 import BtnSound from "./BtnSound";
 import ScrollAnimate from "../framer-motion/ScrollAnimate";
 import Sample1Navbar from "./Sample1Navbar";
+import { supabase } from "../../lib/supabaseClient";
+import { useEffect, useState } from "react";
 
 const slides = [
   {
@@ -132,6 +134,33 @@ const bankAccounts = [
 ];
 
 const Sample1MainInvitation = ({ isOpen, togglePlayPause, isPlaying }) => {
+  const [wishesList, setWishes] = useState([]);
+
+  const sendWishes = async (name, message) => {
+    const { error } = await supabase
+      .from("sample1_wishes")
+      .insert([{ created_at: new Date(), name: name, wishes: message }]);
+
+    if (!error) {
+      fetchWishes();
+    }
+
+    return error;
+  };
+
+  useEffect(() => {
+    fetchWishes();
+  }, []);
+
+  const fetchWishes = async () => {
+    const { data, error } = await supabase
+      .from("sample1_wishes")
+      .select("*")
+      .order("id", { ascending: false });
+
+    if (!error) setWishes(data);
+  };
+
   return (
     <>
       {/* start button sound music */}
@@ -223,8 +252,8 @@ const Sample1MainInvitation = ({ isOpen, togglePlayPause, isPlaying }) => {
           </h2>
 
           <div className="space-y-14">
-            <SayingInput />
-            <SayingList />
+            <SayingInput sendWishes={sendWishes} />
+            <SayingList sayingList={wishesList} />
           </div>
         </div>
       </section>
