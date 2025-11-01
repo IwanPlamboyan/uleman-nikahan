@@ -225,7 +225,7 @@ const Sample2MainInvitation = ({ isOpen, togglePlayPause, isPlaying }) => {
         id="event"
         className="bg-[url(/src/assets/sample2/bg-1.jpg)] bg-center bg-cover relative"
       >
-        <div className="relative z-10 pt-20 pb-60 px-7 flex justify-center flex-col items-center gap-10">
+        <div className="relative z-10 pt-20 pb-60 px-4 md:px-7 flex justify-center flex-col items-center gap-10">
           <div className="flex bg-white shadow-md rounded-lg overflow-hidden w-full border border-[#94A2B8]">
             {/* Sidebar kiri */}
             <div className="bg-[#94A2B8] w-12 flex items-center justify-center">
@@ -235,7 +235,7 @@ const Sample2MainInvitation = ({ isOpen, togglePlayPause, isPlaying }) => {
             </div>
 
             {/* Konten kanan */}
-            <div className="flex-1 px-5 py-4">
+            <div className="w-full flex-1 px-5 py-4">
               {/* Tanggal */}
               <div className="flex items-start justify-between">
                 <div className="text-[48px] font-serif text-[#d36b74] leading-none">
@@ -270,7 +270,7 @@ const Sample2MainInvitation = ({ isOpen, togglePlayPause, isPlaying }) => {
 
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.977583142295!2d107.69595377414103!3d-6.893284567454173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68dd96133233ed%3A0x307df054dcab2a14!2sBaroya%20Fashion!5e0!3m2!1sid!2sid!4v1761976773492!5m2!1sid!2sid"
-                style={{ border: 0, marginTop: "16px" }}
+                style={{ width: "100%", border: 0, marginTop: "16px" }}
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -292,7 +292,7 @@ const Sample2MainInvitation = ({ isOpen, togglePlayPause, isPlaying }) => {
 
           <div className="flex bg-white shadow-md rounded-lg overflow-hidden w-full border border-[#94A2B8]">
             {/* Konten kanan */}
-            <div className="flex-1 px-5 py-4">
+            <div className="w-full flex-1 px-5 py-4">
               {/* Tanggal */}
               <div className="flex items-start justify-between">
                 <div className="text-[48px] font-serif text-[#d36b74] leading-none">
@@ -329,7 +329,7 @@ const Sample2MainInvitation = ({ isOpen, togglePlayPause, isPlaying }) => {
 
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.977583142295!2d107.69595377414103!3d-6.893284567454173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68dd96133233ed%3A0x307df054dcab2a14!2sBaroya%20Fashion!5e0!3m2!1sid!2sid!4v1761976773492!5m2!1sid!2sid"
-                style={{ border: 0, marginTop: "16px" }}
+                style={{ width: "100%", border: 0, marginTop: "16px" }}
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
