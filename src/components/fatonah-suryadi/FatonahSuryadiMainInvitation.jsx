@@ -30,9 +30,9 @@ const FatonahSuryadiMainInvitation = ({
   isPlaying,
 }) => {
   const weddingEventData = {
-    weddingDate: new Date("2025-11-20"),
+    weddingDate: new Date("2025-11-20T08:00:00+07:00"),
     weddingTime: "08:00 - 10:00",
-    receptionDate: new Date("2025-11-20"),
+    receptionDate: new Date("2025-11-20T10:00:00+07:00"),
     receptionTime: "10:00 - 16:00",
   };
 
