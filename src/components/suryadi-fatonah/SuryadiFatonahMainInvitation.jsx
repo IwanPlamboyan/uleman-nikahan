@@ -192,7 +192,7 @@ const SuryadiFatonahMainInvitation = ({
             <br />
             Bapak Hamim
             <br />
-            dan Ibu Siti Julaeha
+            dan Ibu Siti Julaeha alm
           </p>
         </div>
         <img
