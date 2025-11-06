@@ -313,7 +313,7 @@ const SuryadiFatonahMainInvitation = ({
               {/* Waktu */}
               <div className="flex items-center text-sm text-gray-700 space-x-1 mt-2">
                 <Clock9 size={16} />
-                <span>10.00 - 11.00 WIB</span>
+                <span>10.00 WIB - Selesai</span>
               </div>
 
               {/* Lokasi */}
@@ -387,7 +387,7 @@ const SuryadiFatonahMainInvitation = ({
               {/* Waktu */}
               <div className="flex items-center text-sm text-gray-700 space-x-1 mt-2">
                 <Clock9 size={16} />
-                <span>08.00 - SELESAI WIB</span>
+                <span>08.00 WIB - Selesai</span>
               </div>
 
               {/* Lokasi */}
